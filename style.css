@@ -1,0 +1,98 @@
+.sidebar{
+    position: relative;
+    flex: 1;
+}
+.sidebar-image{
+    position: relative;
+    height: 100vh;
+    width: 33vw;
+}
+body{
+    margin: 0;
+}
+
+.logo{
+    position: absolute;
+    height: 20vh;
+    width: auto;
+}
+
+.black-bar{
+    position: absolute;
+    width: 33vw;
+    top: 17.5vh;
+    height: 25vh;
+    left: 0;
+    opacity: .7;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    margin-left: 5vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.form{
+    width: 67vw;
+    height: 100vh;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 4vh;
+    flex-direction: column;
+    border: 0;
+    background-color: WHITE;
+    width: 67vw;
+}
+
+input{
+    outline: 2px solid green;
+    height: 3vh;
+    width: 15vw;
+}
+input:invalid{
+    outline: rgb(248, 85, 85) solid 2px;
+}
+
+input:focus{
+    outline: blue solid 2px;
+}
+
+
+button{
+    margin-top: 5vh;
+    height: 5vh;
+    width: auto;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+label{
+    font-weight: 200;
+}
+
+.msg{
+    font-size: 5vh;
+}

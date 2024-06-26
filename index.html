@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Form</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+    <img class="sidebar-image" alt="sidebar-image" src="img\photo-1585202900154-cf66e657d8d6.avif"></img>
+    <div class="black-bar"><img class="logo" alt="logo" src="img\odin-lined.png"></div>
+    </div>
+<div class="form">
+    <h1>Welcome to the Sign-Up Form!</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Bob" required>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-789" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="bob@email.com" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="********" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="********" required>
+
+        <button>Create Account</button>
+    </form>
+    <div class="msg"></div>
+</div>
+</body>
+</html>
