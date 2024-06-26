@@ -9,6 +9,7 @@
 }
 body{
     margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .logo{
@@ -95,4 +96,5 @@ label{
 
 .msg{
     font-size: 5vh;
+    text-align: center;
 }

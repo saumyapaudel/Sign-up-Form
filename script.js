@@ -6,11 +6,14 @@ const msg = document.querySelector(".msg");
 
 confirmButton.addEventListener("click", (event) => {
     event.preventDefault(); 
-    if (password.value !== confirmPassword.value) {
-       msg.innerHTML = "Passwords Don't Match";
-       msg.style.color = "red";
+    if (!form.checkValidity()) {
+        msg.innerHTML = "Please fill out the form correctly.";
+        msg.style.color = "red";
+    } else if (password.value !== confirmPassword.value) {
+        msg.innerHTML = "Passwords Don't Match";
+        msg.style.color = "red";
     } else {
-       msg.innerHTML = "Form Submitted Successfully";
-       msg.style.color = "green";
+        msg.innerHTML = "Form Submitted Successfully";
+        msg.style.color = "green";
     }
 });
